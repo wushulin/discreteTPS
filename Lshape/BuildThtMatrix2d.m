@@ -5,7 +5,8 @@ function M = BuildThtMatrix2d(Ms, A, dt, N, nu, al, tht, Ay0, Ap0, AyT, ApT)
 % L-shape domain with the mass matrix Ms and the 
 % spatial matrix A = kap*K + C, all generated from 
 % SpaceDisLshape.m
-% Time discretization: linear theta-method, where % theta=0 for explicit Euler, theta=0.5 for 
+% Time discretization: linear theta-method, where
+% theta=0 for explicit Euler, theta=0.5 for 
 % trapezoidal rule, and theta=1 for implicit 
 % Euler.
 % There are four components in the matrix
