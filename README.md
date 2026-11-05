@@ -13,4 +13,7 @@ Fig4_3 (bound_of_rho_complex_case).zip----these codes are used for the contour p
 eigenvalues of the coefficient matrix of the state equation are complex. We use the bound |\tau_1|+|\tau_2| analyzed in Section
 4.3.2 for this plotting
 
+rho_and_its_bound_complex_case.zip----these codes are not used to plot the figure appearing in the paper, but you can use them to plot \rho(R) and its bound for a given penalty parameter \nu 
+
+
 
