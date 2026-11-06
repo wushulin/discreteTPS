@@ -24,15 +24,16 @@ eigenvalues of the coefficient matrix of the state equation are complex. We use 
 
 ## L-shape
 This folder contains numerical tests for the optimal control problems constrained by an advection-diffusion problem:
+
 $$\begin{aligned}
 \partial_t y + \bm c \cdot \nabla y - \kappa \Delta y&=u& \text{in }& \Omega\times(0, T),\\
 y(\bm x, t) &= 0& \text{on }& \partial\Omega\times(0, T),\\
 y(\bm x, 0) &= y_0& \text{in }& \Omega.
 \end{aligned}$$
 
-`BuildThtMatrix2d.m`: function to build one big space-time matrix $M$ for the reduced optimality system $M\bm U=\bm F$, with $\bm U = [\bm Y, \bm P]$.
+`BuildThtMatrix2d.m`: function to build one big space-time matrix $M$ for the reduced optimality system $M\boldsymbol U=\bm F$, with $\boldsymbol U = [\boldsymbol Y, \boldsymbol P]$.
 
-`BuildThtRHS2d.m`: function to build one big space-time right-hand side $\bm F$ for the reduced optimality system.
+`BuildThtRHS2d.m`: function to build one big space-time right-hand side $\boldsymbol F$ for the reduced optimality system.
 
 `LshapeTPSAdvDiffPar.m`: script to run the TPS for the advection-diffusion case for three $\theta$-methods and six $\nu$ values. It was run in parallel on the supercomputer LUNARC in Lund University and data was stored in the folder *data*. 
 
@@ -61,7 +62,7 @@ $$\begin{aligned}
 y(x, 0) &= y_0(x)& \text{ in }& \Omega.
 \end{aligned}$$
 
-`BuildThtMatrixNewton.m`: function to build one big space-time matrix $M$ for one Newton step of the linearized reduced optimality system $M\bm U=\bm F$, with $\bm U = [\bm Y, \bm P]$.
+`BuildThtMatrixNewton.m`: function to build one big space-time matrix $M$ for one Newton step of the linearized reduced optimality system $M\boldsymbol U=\boldsymbol F$, with $\boldsymbol U = [\boldsymbol Y, \boldsymbol P]$.
 
 `BuildThtRHSNewton.m`: function to build one big space-time right-hand side $\bm F$ for one Newton step of the linearized reduced optimality system.
 
