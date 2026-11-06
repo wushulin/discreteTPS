@@ -26,12 +26,12 @@ eigenvalues of the coefficient matrix of the state equation are complex. We use 
 This folder contains numerical tests for the optimal control problems constrained by an advection-diffusion problem:
 
 $$\begin{aligned}
-\partial_t y + \bm c \cdot \nabla y - \kappa \Delta y&=u& \text{in }& \Omega\times(0, T),\\
-y(\bm x, t) &= 0& \text{on }& \partial\Omega\times(0, T),\\
-y(\bm x, 0) &= y_0& \text{in }& \Omega.
+\partial_t y + \boldsymbol c \cdot \nabla y - \kappa \Delta y&=u& \text{in }& \Omega\times(0, T),\\
+y(\boldsymbol x, t) &= 0& \text{on }& \partial\Omega\times(0, T),\\
+y(\boldsymbol x, 0) &= y_0& \text{in }& \Omega.
 \end{aligned}$$
 
-`BuildThtMatrix2d.m`: function to build one big space-time matrix $M$ for the reduced optimality system $M\boldsymbol U=\bm F$, with $\boldsymbol U = [\boldsymbol Y, \boldsymbol P]$.
+`BuildThtMatrix2d.m`: function to build one big space-time matrix $M$ for the reduced optimality system $M\boldsymbol U=\boldsymbol F$, with $\boldsymbol U = [\boldsymbol Y, \boldsymbol P]$.
 
 `BuildThtRHS2d.m`: function to build one big space-time right-hand side $\boldsymbol F$ for the reduced optimality system.
 
@@ -64,7 +64,7 @@ y(x, 0) &= y_0(x)& \text{ in }& \Omega.
 
 `BuildThtMatrixNewton.m`: function to build one big space-time matrix $M$ for one Newton step of the linearized reduced optimality system $M\boldsymbol U=\boldsymbol F$, with $\boldsymbol U = [\boldsymbol Y, \boldsymbol P]$.
 
-`BuildThtRHSNewton.m`: function to build one big space-time right-hand side $\bm F$ for one Newton step of the linearized reduced optimality system.
+`BuildThtRHSNewton.m`: function to build one big space-time right-hand side $\boldsymbol F$ for one Newton step of the linearized reduced optimality system.
 
 `NagumoNewtonTPS.m`: script for Newton outer loop and TPS inner loop to test for three $\theta$-method, three number of subdomains $N$, and four values of $\nu$. The data are saved in `NagumoNewtonTPSdata.txt`
 
